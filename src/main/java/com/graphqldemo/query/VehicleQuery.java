@@ -23,6 +23,7 @@ public class VehicleQuery{
 
     @QueryMapping
     public Optional<Vehicle> getVehicle(@Argument int id) {
+        System.out.println(id);
         return this.vehicleService.getVehicle(id);
     }
 }
