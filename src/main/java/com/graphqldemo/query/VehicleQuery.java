@@ -18,11 +18,16 @@ public class VehicleQuery{
     @QueryMapping
     public List<Vehicle> getVehicles(@Argument int count) {
         System.out.println(count);
+        System.out.println(count);
+        System.out.println();
         return this.vehicleService.getAllVehicles(count);
     }
 
     @QueryMapping
     public Optional<Vehicle> getVehicle(@Argument int id) {
+        System.out.println(id);
+        System.out.println(id);
+        System.out.println(id);
         return this.vehicleService.getVehicle(id);
     }
 }
