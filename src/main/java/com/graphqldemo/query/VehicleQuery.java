@@ -28,6 +28,7 @@ public class VehicleQuery{
         System.out.println(id);
         System.out.println(id);
         System.out.println(id);
+        System.out.println();
         return this.vehicleService.getVehicle(id);
     }
 }
