@@ -18,6 +18,7 @@ public class VehicleQuery{
     @QueryMapping
     public List<Vehicle> getVehicles(@Argument int count) {
         System.out.println(count);
+        System.out.println(count);
         return this.vehicleService.getAllVehicles(count);
     }
 
