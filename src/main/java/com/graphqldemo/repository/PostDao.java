@@ -25,6 +25,7 @@ public class PostDao {
         for (int i = 0; i < count; i++) {
             postList.add(list.get(offset));
             offset++;
+            System.out.println(i);
         }
         return postList;
     }
