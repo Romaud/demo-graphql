@@ -11,7 +11,7 @@ public class PostDao {
 
     {
         list = new ArrayList<>();
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 20; i++) {
             list.add(Post.builder().id(i)
                     .title("title" + i)
                     .authorId(i * 10)
