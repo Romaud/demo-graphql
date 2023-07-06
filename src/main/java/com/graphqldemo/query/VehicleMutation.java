@@ -7,6 +7,9 @@ import org.springframework.graphql.data.method.annotation.Argument;
 import org.springframework.graphql.data.method.annotation.QueryMapping;
 import org.springframework.stereotype.Controller;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Controller
 @AllArgsConstructor
 public class VehicleMutation {
@@ -19,6 +22,8 @@ public class VehicleMutation {
         System.out.println(type);
         System.out.println(brandName);
         System.out.println(modelCode);
+        List<Integer> list = new ArrayList<>();
+        list.add(1);
         return this.vehicleService.createVehicle(type, modelCode, brandName, launchDate);
     }
 }
