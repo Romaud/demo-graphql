@@ -19,9 +19,7 @@ public class VehicleMutation {
     public Vehicle createVehicle(@Argument String type, String modelCode,
                                  @Argument String brandName,
                                  @Argument String launchDate) {
-        System.out.println(type);
-        System.out.println(brandName);
-        System.out.println(modelCode);
+        System.out.println("DEMO изменения!!!");
         List<Integer> list = new ArrayList<>();
         list.add(1);
         return this.vehicleService.createVehicle(type, modelCode, brandName, launchDate);
