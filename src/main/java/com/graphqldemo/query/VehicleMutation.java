@@ -23,7 +23,7 @@ public class VehicleMutation {
         System.out.println(brandName);
         System.out.println(modelCode);
         List<Integer> list = new ArrayList<>();
-        list.add(333);
+        list.add(444);
         System.out.println(list);
         return this.vehicleService.createVehicle(type, modelCode, brandName, launchDate);
     }
