@@ -7,7 +7,6 @@ import org.springframework.graphql.data.method.annotation.Argument;
 import org.springframework.graphql.data.method.annotation.QueryMapping;
 import org.springframework.stereotype.Controller;
 
-import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -24,7 +23,7 @@ public class VehicleMutation {
         System.out.println(brandName);
         System.out.println(modelCode);
         List<Integer> list = new LinkedList<>();
-        list.add(211);
+        list.add(333);
         System.out.println(list);
         return this.vehicleService.createVehicle(type, modelCode, brandName, launchDate);
     }
