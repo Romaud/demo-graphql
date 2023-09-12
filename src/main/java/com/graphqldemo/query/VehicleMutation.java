@@ -8,7 +8,6 @@ import org.springframework.graphql.data.method.annotation.QueryMapping;
 import org.springframework.stereotype.Controller;
 
 import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.List;
 
 @Controller
@@ -23,8 +22,8 @@ public class VehicleMutation {
         System.out.println(type);
         System.out.println(brandName);
         System.out.println(modelCode);
-        List<Integer> list = new LinkedList<>();
-        list.add(211);
+        List<Integer> list = new ArrayList<>();
+        list.add(111);
         System.out.println(list);
         return this.vehicleService.createVehicle(type, modelCode, brandName, launchDate);
     }
