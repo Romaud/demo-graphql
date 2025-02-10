@@ -5,10 +5,27 @@ type Vehicle {
     brandName: String,
     launchDate: String
 }
+type Post {
+    id: ID!
+    title: String!
+    text: String!
+    category: String
+    author: Author!
+}
+type Author {
+    id: ID!
+    name: String!
+    thumbnail: String
+    posts: [Post]!
+}
+
 type Query {
     getVehicles(count: Int):[Vehicle]
     getVehicle(id: ID):Vehicle
+    recentPosts(count: Int, offset: Int): [Post]!
+
 }
 type Mutation {
     createVehicle(type: String!, modelCode: String!, brandName: String, launchDate: String):Vehicle
+    createPost(title: String!, text: String!, category: String, authorId: String!) : Post!
 }
