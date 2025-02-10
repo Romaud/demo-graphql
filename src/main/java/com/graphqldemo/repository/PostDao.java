@@ -1,13 +1,15 @@
 package com.graphqldemo.repository;
 
 import com.graphqldemo.model.Post;
+import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
+@Component
 public class PostDao {
-    private List<Post> list;
+    private final List<Post> list;
 
     {
         list = new ArrayList<>();

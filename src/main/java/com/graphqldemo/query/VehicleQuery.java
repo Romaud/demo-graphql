@@ -15,7 +15,7 @@ import java.util.Optional;
 public class VehicleQuery{
     private VehicleService vehicleService;
 
-    @QueryMapping
+    @QueryMapping("getVehicles")
     public List<Vehicle> getVehicles(@Argument int count) {
         System.out.println(count);
         System.out.println(count);
@@ -24,7 +24,7 @@ public class VehicleQuery{
         return this.vehicleService.getAllVehicles(count);
     }
 
-    @QueryMapping
+    @QueryMapping("getVehicles")
     public Optional<Vehicle> getVehicle(@Argument int id) {
         System.out.println(id);
         String s = "7";
