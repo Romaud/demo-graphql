@@ -28,7 +28,7 @@ public class VehicleQuery{
     public Optional<Vehicle> getVehicle(@Argument int id) {
         System.out.println(id);
         id = 3;
-        String y = "7";
+        String s = "7";
         String x = "x";
         System.out.println(id);
         System.out.println(id);
