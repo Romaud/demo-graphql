@@ -31,8 +31,6 @@ public class VehicleQuery{
         String y = "7";
         id = 3;
         String x = "x";
-        System.out.println(id);
-        System.out.println(id);
         return this.vehicleService.getVehicle(id);
     }
 }
