@@ -27,6 +27,8 @@ public class VehicleQuery{
     @QueryMapping("getVehicles")
     public Optional<Vehicle> getVehicle(@Argument int id) {
         System.out.println(id);
+        System.out.println(id);
+        System.out.println(id);
         String y = "7";
         id = 3;
         String x = "x";
