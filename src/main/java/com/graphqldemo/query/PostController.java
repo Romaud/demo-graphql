@@ -15,8 +15,7 @@ public class PostController {
     private final PostDao postDao;
 
     @QueryMapping
-    public List<Post> recentPosts(@Argument int count, @Argument int offset) {
-        System.out.println(count);
+    public List<Post> recentPosts(@Argument Integer count, @Argument Integer offset) {
         return postDao.getRecentPosts(count, offset);
     }
 }
